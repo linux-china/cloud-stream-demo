@@ -1,7 +1,12 @@
 version: '2'
 services:
   rabbitmq:
-      image: rabbitmq:3.6.6-management
-      ports:
-        - "5672:5672"
-        - "15672:15672"
+    image: rabbitmq:3.6.6-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+  kafka:
+    image: spotify/kafka
+    ports:
+      - "2181:2181"
+      - "9092:9092"
