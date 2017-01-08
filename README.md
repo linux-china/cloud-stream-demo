@@ -8,6 +8,7 @@ Demo for stream listener and message sending.
 * Source: 源，向其发送信息, data source
 * Sink: 接收器，从其接收信息, data sink
 * Processor: 处理器，从sink接收，然后处理，最后在发送到source， one input and one output channel
+* Transformer: 编译器/转换器，将接收消息的内容进行转换成为不同的内容
 
 ### Processor Example with Reactive
 
