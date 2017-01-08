@@ -9,6 +9,20 @@ Demo for stream listener and message sending.
 * Sink: 接收器，从其接收信息, data sink
 * Processor: 处理器，从sink接收，然后处理，最后在发送到source， one input and one output channel
 
+### Processor Example with Reactive
+
+```
+@EnableBinding(Processor.class)
+@EnableAutoConfiguration
+public static class UppercaseTransformer {
+
+  @StreamListener
+  @Output(Processor.OUTPUT)
+  public Flux<String> receive(@Input(Processor.INPUT) Flux<String> input) {
+    return input.map(s -> s.toUpperCase());
+  }
+}
+```
 ### Kafka Integration
 
 * Please start Kafka by Spring Cloud CLI
