@@ -5,8 +5,9 @@ Demo for stream listener and message sending.
 
 ### Vocabulary
 
-* source: 源，向其发送信息, data source
-* sink: 接收器，从其接收信息, data sink
+* Source: 源，向其发送信息, data source
+* Sink: 接收器，从其接收信息, data sink
+* Processor: 处理器，从sink接收，然后处理，最后在发送到source， one input and one output channel
 
 ### Kafka Integration
 
