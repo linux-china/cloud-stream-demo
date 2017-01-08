@@ -3,6 +3,11 @@ Spring Cloud Stream Demo
 
 Demo for stream listener and message sending.
 
+### Vocabulary
+
+* source: 源，向其发送信息, data source
+* sink: 接收器，从其接收信息, data sink
+
 ### Kafka Integration
 
 * Please start Kafka by Spring Cloud CLI
