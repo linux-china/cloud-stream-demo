@@ -3,7 +3,7 @@ Spring Cloud Stream Demo
 
 Demo for stream listener and message sending.
 
-### Vocabulary
+### Glossary
 
 * Source: 源，向其发送信息, data source
 * Sink: 接收器，从其接收信息, data sink
@@ -12,7 +12,7 @@ Demo for stream listener and message sending.
 * Binder: Binder abstraction for use in connecting to physical destinations at the external middleware
 * Aggregation: Spring Cloud Stream provides support for aggregating multiple applications together, connecting their input and output channels directly and avoiding the additional cost of exchanging messages via a broker
 
-### RabbitMQ Vocabulary
+### RabbitMQ Glossary
 
 * Virtual Host: 命名空间的作用, holds a bundle of exchanges, queues and bindings
 * Exchange: 交易所, it accepts messages from publisher, and then routes to the Message Queues
