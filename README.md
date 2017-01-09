@@ -12,6 +12,13 @@ Demo for stream listener and message sending.
 * Binder: Binder abstraction for use in connecting to physical destinations at the external middleware
 * Aggregation: Spring Cloud Stream provides support for aggregating multiple applications together, connecting their input and output channels directly and avoiding the additional cost of exchanging messages via a broker
 
+### RabbitMQ Vocabulary
+
+* Virtual Host: 命名空间的作用, holds a bundle of exchanges, queues and bindings
+* Exchange: 交易所, it accepts messages from publisher, and then routes to the Message Queues
+* Queue: it stores messages in memory or disk and delivers messages to the consumers
+* Binding: It specifies the relationship between an exchange and a message queue that tells how to route messages to the right Message Queues
+
 ### Channel properties
 ```
 spring.cloud.stream.bindings.<channelName>.<property> =  <value>
