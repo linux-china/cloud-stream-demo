@@ -6,7 +6,7 @@ services:
       - "5672:5672"
       - "15672:15672"
   kafka:
-    image: spotify/kafka:0.10.1.1
+    image: spotify/kafka:0.10.2.0
     ports:
       - "2181:2181"
       - "9092:9092"
